@@ -4,8 +4,6 @@ from tkinter import filedialog, scrolledtext, messagebox
 import os
 import ListCharacters, Substitutor
 import lists
-import ast
-import re
 from gui_settings import open_settings_in_separate_file
 import gui_settings
 

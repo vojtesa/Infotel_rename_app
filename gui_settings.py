@@ -6,10 +6,7 @@ import lists
 
 SETTINGS_FILE = "settings.json"
 
-DEFAULT_SETTINGS = {
-    "replacement": [],
-    "do_not_rename": []
-}
+DEFAULT_SETTINGS = {}
 
 def load_settings():
     if not os.path.exists(SETTINGS_FILE):
