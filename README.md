@@ -3,7 +3,7 @@
 Windows desktop utility that recursively renames files and folders in a directory tree —
 stripping Czech diacritics and replacing problematic special characters — while protecting
 a configurable list of names that must never change. Built during my part-time work at
-[InfoTel, spol. s r.o.](https://www.infotel.cz/) to clean up project-documentation archives
+[InfoTel, spol. s.r.o.](https://www.infotel.cz/) to clean up project-documentation archives
 whose folder names follow a fixed convention.
 
 <!-- TODO: add a screenshot of the app window here -->
