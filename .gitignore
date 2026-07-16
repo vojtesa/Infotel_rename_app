@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# PyInstaller output
+build/
+dist/
+
+# IDE
+.idea/
+.vscode/
