@@ -97,4 +97,4 @@ problematické znaky.
 
 ---
 
-**Author:** Vojtěch Tesař · [GitHub](https://github.com/vojtesa)
+**Author:** Vojtěch Tesař
