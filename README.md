@@ -3,19 +3,22 @@
 Windows desktop utility that recursively renames files and folders in a directory tree —
 stripping Czech diacritics and replacing problematic special characters — while protecting
 a configurable list of names that must never change. Built during my part-time work at
-[InfoTel, spol. s.r.o.](https://www.infotel.cz/) to clean up project-documentation archives
-whose folder names follow a fixed convention.
+[InfoTel, spol. s.r.o.](https://www.infotel.cz/) to prepare project documentation for
+upload to a client's legacy portal that only accepts a restricted, essentially ASCII-only
+character set.
 
 <!-- TODO: add a screenshot of the app window here -->
 <!-- ![Rename App GUI](docs/screenshot.png) -->
 
 ## Why
 
-InfoTel's project archives contain thousands of files named by hand over the years — with
-Czech diacritics (`ě, š, č, ř…`) and special characters (`# + ( ) , ;`…) that break
-downstream tooling and file transfers. Renaming by hand is slow and risky: the archive
-also contains **standardized folder names** (e.g. `CW-19_Technicka_zprava`,
-`FO-12_DSPS_linie`) that must stay exactly as they are.
+InfoTel delivers project documentation to Vodafone through the operator's aging supplier
+portal. The portal predates Unicode-friendly web stacks and rejects file and folder names
+containing anything beyond a basic (essentially ASCII) character set — Czech diacritics
+(`ě, š, č, ř…`) and special characters (`# + ( ) , ;`…) make uploads fail. The archives
+contain thousands of files named by hand over the years, so every delivery used to mean
+tedious manual renaming. On top of that, the archive uses **standardized folder names**
+(e.g. `CW-19_Technicka_zprava`, `FO-12_DSPS_linie`) that must stay exactly as they are.
 
 This tool automates the cleanup and makes it safe:
 
@@ -73,6 +76,10 @@ A prebuilt `.exe` is available under
 ---
 
 ## Návod k použití (CZ)
+
+Aplikace připraví názvy souborů a složek pro nahrání do starého portálu Vodafonu, který
+přijímá jen omezenou (v podstatě ASCII) znakovou sadu — odstraní diakritiku a nahradí
+problematické znaky.
 
 1. Vyber složku, kterou chceš vyčistit (tlačítko **Procházet…**).
 2. Klikni na **Dry run** — v logu uvidíš, co všechno *by se* přejmenovalo, ale nic se
